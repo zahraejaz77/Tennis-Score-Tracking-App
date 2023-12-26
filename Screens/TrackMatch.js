@@ -13,6 +13,21 @@ import MatchTrack from "../components/MatchTrack";
 import UndoButton from "../components/UndoButton";
 import { Ionicons } from "@expo/vector-icons";
 
+const SelectShotOptions = [
+  {
+    id: 'ball-in',
+    title: "Ball In",
+
+  },{
+    id: 'runner',
+    title: "Runner",
+  },
+  {
+    id:'fault',
+    title: "Fault",
+  }
+]
+
 export default function TrackMatch({ navigation }) {
   return (
     <View className="  flex-1 relative z-40 mx-4 ">
@@ -25,7 +40,7 @@ export default function TrackMatch({ navigation }) {
         </TouchableOpacity>
       </View>
       <ScoreGrid />
-      <MatchTrack />
+      <MatchTrack options={SelectShotOptions} />
       <View
         style={{ width: 343, height: 53, backgroundColor: "#31DA60" }}
         className=" rounded-full bottom-3 self-center align-middle"
