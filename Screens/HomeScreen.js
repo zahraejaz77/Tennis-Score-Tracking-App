@@ -17,10 +17,11 @@ import { useCallback, useState } from "react";
 import VerticalScroll from "../components/VerticalScroll";
 import HorizontalScroll from "../components/HorizontalScroll";
 import TopBar from "../components/TopBar";
+import ScreenContainer from "../components/ScreenContainer";
 
 export default function HomeScreen() {
   return (
-    <View className="flex-1 relative">
+    <ScreenContainer className="flex-1 relative">
       <View className="relative z-40 h-auto mx-4">
         <View style={{ backgroundColor: "#FAFAFA" }} className=" relative z-40">
           <TopBar></TopBar>
@@ -73,6 +74,6 @@ export default function HomeScreen() {
           <VerticalScroll />
         </View>
       </View>
-    </View>
+    </ScreenContainer>
   );
 }

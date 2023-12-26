@@ -14,9 +14,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import VerticalScroll from "../components/VerticalScroll";
 import HorizontalScroll from "../components/HorizontalScroll";
+import ScreenContainer from "../components/ScreenContainer";
 export default function Matches() {
   return (
-    <View className="flex-1 relative">
+    <ScreenContainer className="flex-1 relative">
       <View
         style={{ backgroundColor: "#FAFAFA" }}
         className="z-40 justify-between"
@@ -179,6 +180,6 @@ export default function Matches() {
           </View>
         </View>
       </View>
-    </View>
+    </ScreenContainer>
   );
 }

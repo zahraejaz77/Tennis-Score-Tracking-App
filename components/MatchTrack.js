@@ -1,7 +1,12 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
-export default function MatchTrack() {
+
+
+
+export default function MatchTrack({
+  options
+}) {
   return (
     <View className="flex-col bottom-5 self-center">
       <View className="flex-row ">
