@@ -7,10 +7,14 @@ import {
 } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+import { useState } from "react";
+i;
+import SelectBox from "../components/SelectBox";
 
 export default function MatchInfo({ navigation }) {
   const windowWidth = Dimensions.get("window").width;
   const windowHeight = Dimensions.get("window").height;
+
   return (
     <View
       style={{
@@ -28,6 +32,7 @@ export default function MatchInfo({ navigation }) {
           placeholder="Mom"
           //placeholderTextColor={"gray"}
           className="pl-24 top-3 text-base text-gray-700 z-30"
+          onPressIn={SelectBox}
         ></TextInput>
         <Text className="text-black text-base font-semibold bottom-4 pl-4">
           {" "}
