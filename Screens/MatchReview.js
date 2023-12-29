@@ -140,24 +140,12 @@ export default function MatchReview({ navigation }) {
         </View>
       </View>
       <View className=" flex flex-row justify-around top-14 mx-3">
-        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg justify-center">
-          <View className="self-center">
-            <AntDesign name="user" size={24} color="gray" />
-          </View>
+        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg">
+          <AntDesign name="user" size={24} color="gray" />
           <Text className="text-lg text-gray-500 self-center"> 2 users</Text>
         </View>
-        <View className="self-center bg-[#DBEAE5] h-24 mx-10 w-36 rounded-lg justify-center">
-          <View className="self-center">
-            <AntDesign name="table" size={24} color="gray" />
-          </View>
-          <Text className="text-lg text-gray-500 self-center"> Grass</Text>
-        </View>
-        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg justify-center">
-          <View className="self-center">
-            <Ionicons name="star-outline" size={24} color="gray" />
-          </View>
-          <Text className="text-lg text-gray-500 self-center"> 2 users</Text>
-        </View>
+        <View className="self-center bg-[#DBEAE5] h-24 mx-10 w-36 rounded-lg"></View>
+        <View className="self-center bg-[#DBEAE5] h-24 w-36 mx-10 rounded-lg"></View>
       </View>
 
       <View
